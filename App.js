@@ -51,22 +51,6 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const mission = new Typed('.multiple', {
     strings: ['Web Developer/Control-Command Engineer'],
     typeSpeed: 100,
@@ -99,7 +83,7 @@ allBoxes.forEach(box => {
 
             let scene = new ScrollMagic.Scene({
                 triggerElement: allRonds[i],
-                reverse: false
+                reverse: true
             })
             .setTween(tween)
             //.addIndicators()
