@@ -51,8 +51,8 @@ body{
 }
 
 section{
-    padding: 10rem 7% 2rem;
-    min-height: 100vh;
+    padding: 10rem 7% 0;
+    min-height: calc(100vh - 10rem);
     box-sizing: border-box;
 
 }
@@ -141,12 +141,18 @@ header.bord{
 
 }
 
-
+.home-content{
+display: flex;
+flex-direction: column;
+gap: 6rem;
+position : relative;
+}
 
 .home-img{
     max-width:50%;
     display: flex;
     justify-content: flex-end;
+    flex-grow: 1;
 }
 .home-img img{
     max-width:60%;
@@ -178,17 +184,38 @@ margin-bottom: 2rem;
 
 }
 
+.home-contact{
+    display: flex;
+    align-items: center;
+
+}
+.p1{
+    font-size: 1.3rem;
+    max-width: 61%;
+    font-family: "Playwrite AU TAS", cursive;
+    font-weight: 300;
+    font-style: normal;
+
+
+}
+
+.social-media{
+    position: absolute;
+    left: 70%;
+    max-width: 30%;
+}
+
+
 .social-media a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
-    font-size: 1.9rem;
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
     color: var(--nat);
     border: 1px solid var(--nat);
     border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
     transition: background .2s ease-in-out;
 
 }
@@ -205,24 +232,30 @@ margin-bottom: 2rem;
 /*#####################################################*/
 
 .about{
-    padding: 8rem 3% 2rem;
-    max-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex-direction: column;
+    gap: 2rem;
+    
 }
 
-
-
-.p1{
-    font-size: 1.3rem;
-    padding-right: 2rem;
-    position: absolute;
-    left: 60%;
-    transform: translate(-15% , 50%);
-    z-index: 1;
-    font-family: "Playwrite AU TAS", cursive;
-    font-weight: 300;
-    font-style: normal;
+.section-title{
+    display: flex;
+    justify-content: center;
+    width: block;
+    
 
 }
+.about-content{
+  
+    width: 100%;
+    max-width: 100%;
+    flex-grow: 1;
+    position : relative;
+}   
+
+
 
 .about h2{
     font-size: 2.2rem;
@@ -236,17 +269,22 @@ margin-bottom: 2rem;
 
 
 .box-timeline{
-    width: 90%;
+    width: 100%;
     margin: auto auto;
     background: var(--light);
-    position: relative;
+    position: absolute;
+    height: 80%;
 
 
 }
 
 .ligne {
-   height: 50rem; 
+   position: absolute;
+   top: 0;
+   left: 50%;
+   height: 100%; 
    width: 1rem;
+   border-radius: 50%;
    background: var(--bg);
    margin: 4rem auto;
 }
@@ -258,7 +296,7 @@ margin-bottom: 2rem;
     background: var(--vlt2);
     position: absolute;
     border: 0.1rem solid var(--bg);
-    left: 50%;
+    left: 50.25%;
     transform: translate(-50%);
     display: flex;
     justify-content: center;
@@ -268,15 +306,15 @@ margin-bottom: 2rem;
 
 }
 
-.r1{top: -2rem;}
-.r2{top: 15rem;}
-.r3{top: 31rem;}
-.r4{top: 48rem;}
+.r1{top: 8%;}
+.r2{top: 32%;}
+.r3{top: 64%;}
+.r4{top: 88%;}
 
 .box{
     color: var(--bg);
     background: var(--light);
-    width: 46%;
+    width: 40%;
     min-height: 5rem;
     padding: 1rem;
     border-radius: 0.3rem;
@@ -285,24 +323,25 @@ margin-bottom: 2rem;
     position: absolute;
     transform: translate(-50%);
     left: 50%;
+    top: 0;
 
 }
 
 .b1{
-    top: -3rem;
-    left: calc(50% - 28%);
+    top: calc(8%);
+    left: calc(50% - 24%);
 }
 .b2{
-    top: 14rem;
-    left: calc(50% + 28%);
+    top: calc(32%);
+    left: calc(50% + 24%);
 }
 .b3{
-    top: 30rem;
-    left: calc(50% - 28%);
+    top: calc(64%);
+    left: calc(50% - 24%);
 }
 .b4{
-    top: 47rem;
-    left: calc(50% + 28%);
+    top: calc(88%);
+    left: calc(50% + 24%);
 }
 
 .box h3{
