@@ -35,6 +35,7 @@ scroll-behavior: smooth;
     --vlt4  :rgb(253, 229, 250);
      --ylo1 : rgb(252, 250, 229);
     --nat2 : rgba(6, 105, 26, 0.961);
+    --prof : #FBFBFB;
 
 
 }
@@ -319,7 +320,7 @@ margin-bottom: 2rem;
     padding: 1rem;
     border-radius: 0.3rem;
     height: auto;
-    box-shadow: 0 1rem 1.5rem var(--bg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     position: absolute;
     transform: translate(-50%);
     left: 50%;
@@ -366,6 +367,11 @@ margin-bottom: 2rem;
 
 .portfolio{
     background: var(--light);
+    display : flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap : 8rem;
 }
 
 
@@ -381,6 +387,15 @@ margin-bottom: 2rem;
     font-size: 1.6rem;
     text-align: center;
     margin-bottom: 2rem;
+
+}
+
+.portfolio-content{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap : 2rem;
 
 }
 
@@ -471,6 +486,203 @@ display: flex;
     color: var(--bg2);
 
 }
+
+/*#####################################################*/
+/*################# section MySkills ##################*/
+/*#####################################################*/
+
+
+.mySkills{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+.mySkills h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--bg);
+    text-align: center;
+
+}
+
+.mySkills__content{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    flex: 1;
+}
+
+
+
+
+.mySkills__projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    gap: 3rem;
+    flex-grow: 1;
+}
+
+.projects-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+.projects-title{
+    display: flex;
+    justify-content: center;
+
+}
+
+.projects-carousel{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--light);
+    border-radius: 0.5rem;
+    box-shadow: inset 0 1px 8px rgba(231, 228, 228, 0.25);
+}
+
+.projects-carousel__card{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    width: 90%;
+    background: var(--prof);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    height: 60%;
+    max-height: 80%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.projects-carousel__card img{
+    width: 50%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.project-card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    position: absolute;
+    right: -2rem;
+    top: 2rem;
+
+}
+
+.project-card-title {
+    display: inline-flex;
+    gap: 2rem;
+    position: relative;
+    max-width: 100%;
+}
+.project-card-title h4{
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--bg);
+    max-width: 50%;
+}
+
+.tags {
+    position: absolute;
+    right: 4rem;
+    max-width: 50%;
+}
+
+.tag{
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    background: var(--vlt2);
+    color: var(--bg);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+.mySkills__boxs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    gap: 2rem;
+
+}
+
+.tech-box, .ops-box{
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.tech-title, .ops-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+.seeAll{
+    padding: 0.2rem 1.5rem;
+    background: none;
+    font-style: var(--bg);
+    font-size: 1rem;
+    cursor: pointer;
+    border: .1rem solid var(--vlt2);
+    border-radius: 2rem;
+    position: absolute;
+    right: 0;
+}
+
+.tech-skills, .ops-skills{
+    display: flex;
+    gap: 2rem;
+    background-color: var(--light);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tech-skills__card, .ops-skills__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-skills__card img, .ops-skills__card img{
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
 
 
 
