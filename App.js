@@ -82,3 +82,27 @@ allBoxes.forEach((box) => {
 
 menuIcon.addEventListener("click", MenuActive);
 window.addEventListener("scroll", scrollActive);
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const carousel = document.querySelector(".projects-carousel");
+const down = document.getElementById("scrollDown");
+const up = document.getElementById("scrollUp");
+
+if (carousel && down && up){
+
+down.addEventListener("click", () => {
+carousel.scrollBy({ top: 300, behavior: "smooth" });
+});
+
+up.addEventListener("click", () => {
+carousel.scrollBy({ top: -300, behavior: "smooth" });
+});
+
+}
+
+});
